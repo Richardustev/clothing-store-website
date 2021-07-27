@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url("./header-background/Header.jpg");
+    background-repeat: no-repeat;
+}
+
+.menu-bar{
+    background-image: linear-gradient(-90deg, #d38312, #a83279);
+}
+
+.nav-link{
+    font-size: 20px;
+    margin: 3px;
+    color: #fff!important;
+    font-weight: 900;
+}
+
+/*ribbon*/
+#ribbon{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: linear-gradient(-90deg, #a83279, #d38312);
+}
+
+/*Main*/
+#main{
+    margin: 10px;
+}
+
+#main .grid-main-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.big-logo{
+    border-right: 10px double #000;
+    padding-bottom: 30px;
+}
+
+#main .grid-main-info .big-logo h2,
+#main .grid-main-info .main-info h2{
+    font-family: 'Dancing Script';
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#main .grid-main-info .big-logo img{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 400px;
+}
+
+#main .grid-main-info .main-info p{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    line-height: 90px;
+    font-size: 25px;
+}
+
+#header .header-background img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    #header .header-title h1{
+        font-size: 60px;
+    }
+
+    #main .grid-main-info{
+        display: block;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .big-logo{
+        border-right: none;
+        border-bottom: 10px double #000;
+    }
+
+    #main .grid-main-info .big-logo img{
+        width: 300px;
+    }
+}
